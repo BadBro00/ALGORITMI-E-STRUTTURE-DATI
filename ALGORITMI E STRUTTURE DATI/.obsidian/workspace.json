@@ -1,0 +1,151 @@
+{
+  "main": {
+    "id": "cbb461e09bcc8b74",
+    "type": "split",
+    "children": [
+      {
+        "id": "ae0885b8381bbadc",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "51b0329ebccc04d9",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "91b60d77bfb50b29",
+    "type": "split",
+    "children": [
+      {
+        "id": "c42a555123157681",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "35a5969a501e2428",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "3747b2afedc7a5d2",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "b757bfa15216ebdb",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "368d53c949db0c55",
+    "type": "split",
+    "children": [
+      {
+        "id": "89d3eaed9c3ec72a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f725835659157f04",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "472fcb39cdcb7af9",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "6ad78b08c4ed9a0f",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "8b60081f16e9bba0",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "51b0329ebccc04d9",
+  "lastOpenFiles": [
+    "TEORIA/TEO - LEZ 1 22-09-2023.md",
+    "LABORATORIO/LAB - LEZ 1 26-09-2023.md",
+    "README.md",
+    "ALGORITMI",
+    "ESERCIZI",
+    "LABORATORIO",
+    "TEORIA"
+  ]
+}
