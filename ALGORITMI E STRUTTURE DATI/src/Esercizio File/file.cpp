@@ -27,9 +27,9 @@ void RispettaIVersi::verifica_soluzioni() {
     string problema, soluzione;
     while (getline(f_problema, problema) && getline(f_soluzione, soluzione)) {
         if (verifica_soluzione(problema, soluzione)) {
-            f_esito << "Soluzione corretta" << endl;
-        } else {
             f_esito << "Soluzione errata" << endl;
+        } else {
+            f_esito << "Soluzione corretta" << endl;
         }
     }
     f_problema.close();
