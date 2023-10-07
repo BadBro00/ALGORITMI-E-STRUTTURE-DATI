@@ -4,6 +4,7 @@
 ## REPOSITORY CURATA DA:
 # EUGENIO MILITERNO
 # ANIELLO GENOVESE
+# EMMANUELE AMOROSO
 # PASQUALE RUOTOLO
 # SANTO GENOVESE
 ---------------------------------------------------------------------------------------------------------------------------
