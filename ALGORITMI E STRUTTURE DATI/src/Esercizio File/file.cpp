@@ -4,6 +4,7 @@
 
 using namespace std;
 
+
 class RispettaIVersi {
 public:
     RispettaIVersi(const string& problema_file, const string& soluzione_file, const string& esito_file);
