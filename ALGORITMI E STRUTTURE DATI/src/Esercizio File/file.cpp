@@ -10,7 +10,7 @@ public:
     void verifica_soluzioni();
 
 private:
-    bool verifica_soluzione(const string& problema, const string& soluzione);
+    bool verifica_soluzione(const string& problema, const string& soluzione, const vector<int>& numeri);
 
     string problema_file_;
     string soluzione_file_;
@@ -26,10 +26,15 @@ void RispettaIVersi::verifica_soluzioni() {
     ofstream f_esito(esito_file_);
     string problema, soluzione;
     while (getline(f_problema, problema) && getline(f_soluzione, soluzione)) {
-        if (verifica_soluzione(problema, soluzione)) {
-            f_esito << "Soluzione errata" << endl;
-        } else {
+        vector<int> numeri;
+        numeri.reserve(soluzione.size());
+        for (int i = 0; i < numeri.capacity(); i++) {
+            numeri.emplace_back(i + 1);
+        }
+        if (verifica_soluzione(problema, soluzione, numeri)) {
             f_esito << "Soluzione corretta" << endl;
+        } else {
+            f_esito << "Soluzione errata" << endl;
         }
     }
     f_problema.close();
@@ -37,19 +42,15 @@ void RispettaIVersi::verifica_soluzioni() {
     f_esito.close();
 }
 
-bool RispettaIVersi::verifica_soluzione(const string& problema, const string& soluzione) {
-    vector<int> numeri(soluzione.size());
-    for (int i = 0; i < numeri.size(); i++) {
-        numeri[i] = i + 1;
-    }
+bool RispettaIVersi::verifica_soluzione(const string& problema, const string& soluzione, const vector<int>& numeri) {
     for (int i = 0; i < problema.size(); i++) {
-        if (problema[i] == '<' && soluzione[i] >= soluzione[i+1]) {
-            return false;
-        } else if (problema[i] == '>' && soluzione[i] <= soluzione[i+1]) {
-            return false;
+        if (problema[i] == '<' && soluzione[numeri[i]-1] >= soluzione[numeri[i+1]-1]) {
+            return true;
+        } else if (problema[i] == '>' && soluzione[numeri[i]-1] <= soluzione[numeri[i+1]-1]) {
+            return true;
         }
     }
-    return true;
+    return false;
 }
 
 int main(){
@@ -59,23 +60,20 @@ int main(){
 }
 
 /*
-Il codice sopra è un'implementazione in C++ di una classe chiamata RispettaIVersi che legge due file di input, 
-problema.txt e soluzione.txt, e scrive i risultati della verifica delle soluzioni su un file di output, esito.txt. 
-Il problema che viene risolto consiste nel verificare se ogni soluzione in soluzione.txt è corretta rispetto al problema corrispondente in problema.txt. 
-Il problema consiste in una sequenza di segni < e >, e la soluzione corretta è una sequenza di interi che soddisfa i segni.
+Il codice sopra è scritto in C++ e definisce una classe RispettaIVersi che legge due 
+file di testo (problema_file e soluzione_file) e verifica se le soluzioni rispettano 
+i vincoli specificati nel file di problema. La classe ha un costruttore che prende 
+i nomi dei file di input e di output come parametri e un metodo verifica_soluzioni 
+che legge le soluzioni dal file di input, verifica se rispettano i vincoli e scrive 
+l'esito nel file di output.
 
-La classe RispettaIVersi ha tre variabili membro private: problema_file_, soluzione_file_ e esito_file_, 
-che sono i nomi dei file di input e output. Il costruttore prende questi tre nomi di file come argomenti e inizializza le variabili membro. 
-La classe ha anche due funzioni membro private: verifica_soluzione e verifica_soluzioni. La prima prende un problema e 
-una soluzione come stringhe e restituisce un booleano che indica se la soluzione è corretta rispetto al problema. La seconda legge i problemi e le soluzioni dai file di input, 
-verifica ogni soluzione e scrive i risultati sul file di output.
+La funzione verifica_soluzione prende tre parametri: la stringa problema, 
+la stringa soluzione e il vettore numeri. La funzione utilizza il vettore numeri 
+per associare un numero a ciascun carattere della stringa soluzione e verifica se 
+la soluzione rispetta i vincoli specificati nella stringa problema. In particolare, 
+la funzione utilizza un ciclo for per scorrere i caratteri della stringa problema e 
+confronta i caratteri della stringa soluzione utilizzando gli indici del vettore numeri.
 
-La funzione verifica_soluzione crea prima un vettore di interi da 1 alla lunghezza della stringa soluzione. Poi itera sulla stringa problema e 
-controlla ogni segno rispetto alla coppia corrispondente di interi nella stringa soluzione. Se il segno è < e l'intero a sinistra è maggiore o uguale all'intero a destra,
- o se il segno è > e l'intero a sinistra è minore o uguale all'intero a destra, la funzione restituisce false. Altrimenti, restituisce true.
-
-La funzione verifica_soluzioni apre prima i file di input e output utilizzando ifstream e ofstream, rispettivamente. Poi legge ogni riga dai file di input utilizzando getline, 
-verifica la soluzione corrispondente utilizzando verifica_soluzione e scrive il risultato sul file di output utilizzando <<. Infine, chiude tutti i file utilizzando close.
-
-La funzione main crea un'istanza della classe RispettaIVersi con i nomi dei file di input e output, chiama il metodo verifica_soluzioni e restituisce 0 per indicare l'esecuzione corretta.
+La funzione main crea un oggetto RispettaIVersi con i nomi dei file di input e
+di output e chiama il metodo verifica_soluzioni per verificare le soluzioni.
 */
