@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "LABORATORIO/LAB - LEZ 2 7-10-23.md",
+                "file": "LABORATORIO/LAB - LEZ 3 10-10-23.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "LABORATORIO/LAB - LEZ 2 7-10-23.md",
+                "file": "LABORATORIO/LAB - LEZ 3 10-10-23.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "LABORATORIO/LAB - LEZ 2 7-10-23.md",
+                "file": "LABORATORIO/LAB - LEZ 3 10-10-23.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "LABORATORIO/LAB - LEZ 2 7-10-23.md"
+                "file": "LABORATORIO/LAB - LEZ 3 10-10-23.md"
               }
             }
           }
@@ -159,20 +159,28 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "61862d64dfb47984",
+  "active": "35a5969a501e2428",
   "lastOpenFiles": [
+    "LABORATORIO/LAB - LEZ 2 7-10-23.md",
+    "LABORATORIO/LAB - LEZ 3 10-10-23.md",
+    "src/Esercizio File/soluzione.txt",
+    "src/Esercizio File/problema.txt",
+    "src/Esercizio File/file.cpp",
+    "src/Esercizio File/esito.txt",
+    "src/Esercizio Anfora/anfora.cpp",
+    "src/Esercizio File",
+    "src/Esercizio Anfora",
+    "src",
+    "TEORIA/TEO - LEZ 2 7_10_23.md",
+    "TEORIA/Requisiti Mate.md",
     "TEORIA/TEO - LEZ 2 7_10_23",
     "TEORIA/TEO - LEZ 1 22-09-2023.md",
     "Pasted image 20231003172849.png",
     "Pasted image 20231003172832.png",
     "Pasted image 20231003172824.png",
     "LABORATORIO/LAB - LEZ 1 26-09-2023.md",
-    "LABORATORIO/LAB - LEZ 2 7-10-23.md",
     "TEORIA/TEO - LEZ 2 7-10-23.md",
     "README.md",
-    "ALGORITMI",
-    "ESERCIZI",
-    "LABORATORIO",
-    "TEORIA"
+    "ALGORITMI"
   ]
 }
