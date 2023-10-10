@@ -1,0 +1,1 @@
+progetta ed implementa una linked list di impiegati di un'azienda. ogni impiegato ha un nome ed un salario. Un manager è un impiegato cui viene corrisposto un bonus oltre al salario: creare una lista di impiegati e stamparla a video sfruttando il principio del polimorfismo; implementaer l'overload dell'operatore + in modo tale da
