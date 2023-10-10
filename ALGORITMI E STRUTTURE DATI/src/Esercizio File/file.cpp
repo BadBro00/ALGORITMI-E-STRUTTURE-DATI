@@ -72,7 +72,7 @@ verifica ogni soluzione e scrive i risultati sul file di output.
 
 La funzione verifica_soluzione crea prima un vettore di interi da 1 alla lunghezza della stringa soluzione. Poi itera sulla stringa problema e 
 controlla ogni segno rispetto alla coppia corrispondente di interi nella stringa soluzione. Se il segno è < e l'intero a sinistra è maggiore o uguale all'intero a destra,
- o se il segno è > e l'intero a sinistra è minore o uguale all'intero a destra, la funzione restituisce false. Altrimenti, restituisce true.
+o se il segno è > e l'intero a sinistra è minore o uguale all'intero a destra, la funzione restituisce false. Altrimenti, restituisce true.
 
 La funzione verifica_soluzioni apre prima i file di input e output utilizzando ifstream e ofstream, rispettivamente. Poi legge ogni riga dai file di input utilizzando getline, 
 verifica la soluzione corrispondente utilizzando verifica_soluzione e scrive il risultato sul file di output utilizzando <<. Infine, chiude tutti i file utilizzando close.
