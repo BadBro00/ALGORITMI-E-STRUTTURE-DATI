@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "LABORATORIO/LAB - LEZ 3 10-10-23.md",
+                "file": "LABORATORIO/LAB - LEZ 4 17-10-2023.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "LABORATORIO/LAB - LEZ 3 10-10-23.md",
+                "file": "LABORATORIO/LAB - LEZ 4 17-10-2023.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "LABORATORIO/LAB - LEZ 3 10-10-23.md",
+                "file": "LABORATORIO/LAB - LEZ 4 17-10-2023.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "LABORATORIO/LAB - LEZ 3 10-10-23.md"
+                "file": "LABORATORIO/LAB - LEZ 4 17-10-2023.md"
               }
             }
           }
@@ -159,13 +159,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "61862d64dfb47984",
+  "active": "35a5969a501e2428",
   "lastOpenFiles": [
+    "LABORATORIO/LAB - LEZ 3 10-10-23.md",
+    "LABORATORIO/LAB - LEZ 4 17-10-2023.md",
     "src/Esercizio Azienda/azienda.cpp",
     "src/Esercizio Azienda",
     "src/Esercizio File/file",
     "LABORATORIO/LAB - LEZ 2 7-10-23.md",
-    "LABORATORIO/LAB - LEZ 3 10-10-23.md",
     "src/Esercizio File/soluzione.txt",
     "src/Esercizio File/problema.txt",
     "src/Esercizio File/file.cpp",
@@ -173,7 +174,6 @@
     "src/Esercizio Anfora/anfora.cpp",
     "src/Esercizio File",
     "src/Esercizio Anfora",
-    "src",
     "TEORIA/TEO - LEZ 2 7_10_23.md",
     "TEORIA/Requisiti Mate.md",
     "TEORIA/TEO - LEZ 1 22-09-2023.md",
