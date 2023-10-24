@@ -1,76 +1,92 @@
-/*
-La blockchain è una struttura dati composta da una lista di
-blocchi all'interno dei quali è memorizzato un insieme di
-transazioni. Una transazione è costituita da un indirizzo
-FROM, un indirizzo TO ed un valore intero QT.
-	1. Progettare ed implementare una struttura dati LinkedList mediante template
-		 ed utilizzarla per realizzare una blockchain
-	2. Dato un indirizzo A, stampare a video/salvare su file tutte le transazioni
-		 in cui compare A ed il suo bilancio finale
-*/
 #include <iostream>
-#include <vector>
+//#include <vector>
 #include <string>
+using namespace std;
+template <typename T>
+class Node {
+public:
+    T data;
+    Node* next;
+    Node(T data, Node* next = nullptr) : data(data), next(next) {}
+};
 
-struct Transaction {
+class Transaction {
+public:
     std::string from;
     std::string to;
     int amount;
+
+    Transaction(std::string from, std::string to, int amount) : from(from), to(to), amount(amount) {}
 };
 
-struct Block {
-    std::vector<Transaction> transactions;
-    Block* next;
-};
-
-class Blockchain {
-private:
-    Block* head;
+template <typename T>
+class LinkedList {
+protected:
+    Node<T>* head;
 public:
-    Blockchain() : head(nullptr) {}
+    LinkedList() : head(nullptr) {}
 
-    void addBlock(const std::vector<Transaction>& transactions) {
-        Block* newBlock = new Block{transactions, nullptr};
-        if (head == nullptr) {
-            head = newBlock;
-        } else {
-            Block* temp = head;
-            while (temp->next != nullptr) {
-                temp = temp->next;
-            }
-            temp->next = newBlock;
-        }
+    void addNode(T data) {
+        Node<T>* newNode = new Node<T>(data, head);
+        head = newNode;
     }
+	Nodo<T> *getHead(){return head;}
+};
 
+class Block : public LinkedList<Transaction> {
+public:
     void printTransactions(const std::string& address) {
-        Block* current = head;
+        Node<Transaction>* current = head;
         while (current != nullptr) {
-            for (const Transaction& transaction : current->transactions) {
-                if (transaction.from == address || transaction.to == address) {
-                    std::cout << "From: " << transaction.from
-                              << ", To: " << transaction.to
-                              << ", Amount: " << transaction.amount
-                              << std::endl;
-                }
+            if (current->data.from == address || current->data.to == address) {
+                std::cout << "From: " << current->data.from
+                          << ", To: " << current->data.to
+                          << ", Amount: " << current->data.amount
+                          << std::endl;
             }
             current = current->next;
         }
     }
 };
 
+class Blockchain : public LinkedList<Block> {
+public:
+	Nodo<Block> getHead(){return head;}
+    void printTransactions(const std::string& address) {
+        Node<Block>* current = head;
+        while (current != nullptr) {
+            current->data.printTransactions(address);
+            current = current->next;
+        }
+    }
+	void AddValues(string A){
+		float sum = 0;
+		Block *c = this->getHead();
+		while(c){
+			Node<Transaction> *t = c->head;
+			while(t){
+				if(t->data.from == A){
+					sum += t->data.amount;
+				}
+				t = t->next;
+			}
+			c = c->next;
+		}
+	}
+
+};
+
 int main() {
     Blockchain blockchain;
-    std::vector<Transaction> transactions1 = {
-        {"A", "B", 50},
-        {"B", "C", 30},
-    };
-    blockchain.addBlock(transactions1);
+    Block block1;
+    block1.addNode(Transaction("A", "B", 50));
+    block1.addNode(Transaction("B", "C", 30));
+    blockchain.addNode(block1);
 
-    std::vector<Transaction> transactions2 = {
-        {"C", "A", 20},
-        {"B", "A", 10},
-    };
-    blockchain.addBlock(transactions2);
+    Block block2;
+    block2.addNode(Transaction("C", "A", 20));
+    block2.addNode(Transaction("B", "A", 10));
+    blockchain.addNode(block2);
 
     blockchain.printTransactions("A");
 
