@@ -30,9 +30,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "ea133dfa3a4b7b55",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "LABORATORIO/LAB - LEZ 5  31-10-23.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -98,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "LABORATORIO/LAB - LEZ 4 17-10-2023.md",
+                "file": "LABORATORIO/LAB - LEZ 5  31-10-23.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "LABORATORIO/LAB - LEZ 4 17-10-2023.md",
+                "file": "LABORATORIO/LAB - LEZ 5  31-10-23.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "LABORATORIO/LAB - LEZ 4 17-10-2023.md"
+                "file": "LABORATORIO/LAB - LEZ 5  31-10-23.md"
               }
             }
           }
@@ -161,8 +173,10 @@
   },
   "active": "35a5969a501e2428",
   "lastOpenFiles": [
-    "LABORATORIO/LAB - LEZ 3 10-10-23.md",
     "LABORATORIO/LAB - LEZ 4 17-10-2023.md",
+    "LABORATORIO/LAB - LEZ 5  31-10-23.md",
+    "LABORATORIO/LAB - LEZ 1 26-09-2023.md",
+    "LABORATORIO/LAB - LEZ 3 10-10-23.md",
     "src/Esercizio Azienda/azienda.cpp",
     "src/Esercizio Azienda",
     "src/Esercizio File/file",
@@ -180,7 +194,6 @@
     "Pasted image 20231003172849.png",
     "Pasted image 20231003172832.png",
     "Pasted image 20231003172824.png",
-    "LABORATORIO/LAB - LEZ 1 26-09-2023.md",
     "TEORIA/TEO - LEZ 2 7-10-23.md",
     "README.md"
   ]
