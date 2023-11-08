@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "LABORATORIO/LAB - LEZ 6 7-11-23.md",
+                "file": "TEORIA/TEO - LEZ 6.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "LABORATORIO/LAB - LEZ 6 7-11-23.md",
+                "file": "TEORIA/TEO - LEZ 6.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "LABORATORIO/LAB - LEZ 6 7-11-23.md",
+                "file": "TEORIA/TEO - LEZ 6.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "LABORATORIO/LAB - LEZ 6 7-11-23.md"
+                "file": "TEORIA/TEO - LEZ 6.md"
               }
             }
           }
@@ -173,8 +173,15 @@
   },
   "active": "ea133dfa3a4b7b55",
   "lastOpenFiles": [
-    "LABORATORIO/LAB - LEZ 5  31-10-23.md",
+    "TEORIA/TEO - LEZ 5.md",
+    "TEORIA/TEO - LEZ 6.md",
+    "TEORIA/TEO - LEZ 4.md",
+    "TEORIA/TEO - LEZ 3.md",
+    "TEORIA/TEO - LEZ 2 7-10-23.md",
+    "TEORIA/TEO - LEZ 1 22-09-2023.md",
+    "TEORIA/TEO - LEZ 2 7_10_23.md",
     "LABORATORIO/LAB - LEZ 6 7-11-23.md",
+    "LABORATORIO/LAB - LEZ 5  31-10-23.md",
     "LABORATORIO/LAB - LEZ 4 17-10-2023.md",
     "LABORATORIO/LAB - LEZ 1 26-09-2023.md",
     "LABORATORIO/LAB - LEZ 3 10-10-23.md",
@@ -189,13 +196,10 @@
     "src/Esercizio Anfora/anfora.cpp",
     "src/Esercizio File",
     "src/Esercizio Anfora",
-    "TEORIA/TEO - LEZ 2 7_10_23.md",
     "TEORIA/Requisiti Mate.md",
-    "TEORIA/TEO - LEZ 1 22-09-2023.md",
     "Pasted image 20231003172849.png",
     "Pasted image 20231003172832.png",
     "Pasted image 20231003172824.png",
-    "TEORIA/TEO - LEZ 2 7-10-23.md",
     "README.md"
   ]
 }
