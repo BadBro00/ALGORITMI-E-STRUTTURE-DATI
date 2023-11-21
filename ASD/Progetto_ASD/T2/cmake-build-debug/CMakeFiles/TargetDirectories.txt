@@ -1,0 +1,3 @@
+/home/eugeniomiliterno/Scrivania/ASD/Progetto_ASD/T2/cmake-build-debug/CMakeFiles/T2.dir
+/home/eugeniomiliterno/Scrivania/ASD/Progetto_ASD/T2/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/eugeniomiliterno/Scrivania/ASD/Progetto_ASD/T2/cmake-build-debug/CMakeFiles/rebuild_cache.dir
