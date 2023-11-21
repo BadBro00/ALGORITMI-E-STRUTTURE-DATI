@@ -1,6 +1,5 @@
-# ALGORITMI DEI
-
-
+**ALGORITMI DEI**
+---
 
 **QuickSort**
 	Il quicksort è l’algoritmo di ordinamento che generalmente ha _prestazioni migliori tra quelli basati su confronto_. Gli svantaggi sono dati dal fatto che **non è stabile**, e nel caso peggiore ha $T(n) = \Theta(n^2)$
