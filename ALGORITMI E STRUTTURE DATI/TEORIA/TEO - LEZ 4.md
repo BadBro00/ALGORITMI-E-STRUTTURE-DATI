@@ -87,15 +87,19 @@ Esiste anche un *caso bonus*, che in realtà è l'estensione del primo caso:
 
 ---
 **Albero di Ricorsione**
+	Data la ricorrenza:
 	$T(n) = 3T(\frac{n}{4})+\Theta(n^2)$
+	Cerchiamo una soluzione.
 	Supponiamo per semplicità che $n = 4^k$
 	Srotolando l’albero, avremo una figura pari a :
+	![[Pasted image 20231124092451.png]]
 	Poichè le dimensioni dei sottoproblemi diminuiscono di un fattore 4 ogni volta che scendiamo di un livello, alla fine troveremo foglie con il caso base.
 	_A quale distanza dalla radice troveremo una foglia?_
 		La dimensione del sottoproblema per un nodo alla profondità i è $\frac{n}{4^i}$
 		Quindi la radice ha profondità i tale che
 		$\frac{n}{4^i}=1 \implies i=\log_4n$
 		L’albero ha quindi $\log_4n+1$ livelli
+		![[Pasted image 20231124092512.png]]
 	**Costo Totale**
 	Sommando il costo di ogni livello:
 	$T(n) = \sum_{i=0}^{\log_4n-1}(\frac{3}{16})^i*cn^2+\Theta(n^{\log_43}) = \frac{(\frac{3}{16})^{\log_4n}-1}{\frac{3}{16}-1}cn^2+\Theta(n^{\log_43})$
@@ -106,5 +110,13 @@ Esiste anche un *caso bonus*, che in realtà è l'estensione del primo caso:
 Tale ipotesi va comunque **verificata**:
 	$$ T(n) \le 3T(\frac{n}{4})+cn^2 \\ \le3d\frac{n^2}{4}+cn^2\\ \le \frac{3}{16}dn^2+cn^2\\ \le \frac{3}{16}dn^2+\frac{13}{16}dn^2-\frac{13}{16}dn^2+cn^2 \\ \le dn^2 $$
 	Basta scegliere $d \ | \ c \le \frac{13}{16}d$
+
+**ALBERO BILANCIATO**
+	Se dividendo il sottoproblema in N parti, avremo N figli da ciascun nodo,
+	In questo caso, il costo è $T(n)=O(f(n)*\log n)$
+
+**ALBERO NON BILANCIATO**
+	Se dividendo il sottoproblema in N parti, avremo M figli ($M\ne  N$) da ciascun nodo.
+	In questo caso, il costo è $T(n)=O(f(n))$
 
 ---
