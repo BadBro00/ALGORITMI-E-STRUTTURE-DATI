@@ -98,13 +98,16 @@ Esiste anche un *caso bonus*, che in realtà è l'estensione del primo caso:
 		La dimensione del sottoproblema per un nodo alla profondità i è $\frac{n}{4^i}$
 		Quindi la radice ha profondità i tale che
 		$\frac{n}{4^i}=1 \implies i=\log_4n$
-		L’albero ha quindi $\log_4n+1$ livelli
+		L’albero ha quindi $\log_4n+1$ livelli (**ALTEZZA**)
 		![[Pasted image 20231124092512.png]]
+		Il costo del livello finale è $T(n)=(\frac{3}{16})^i*cn^2$.
+		L'ultimo livello si trova a profondità $\log_4(n)$, ed ha costo:
+		$(\frac{3}{16})^i*cn^2$ con $i=\log_4n$, quindi $$(\frac{3}{16})^{\log_4 n}*cn^2=\\ \frac{3^{\log_4 n}}{16^{\log_4 n}}*cn^2 \\ = 3^{\log_4 n}/4^{2*\log_4 n}*cn^2 \\ = 3^{\log_4 n}/4^{{\log_4 n}^2}*cn^2 \\ = 3^{\log_4 n}*c*\frac{n^2}{n^2} \\ = c*3^{\log_4 n} \\ = c*n^{\log_4 3} \\ =\Theta(n^{\log_4 3})$$
 	**Costo Totale**
 	Sommando il costo di ogni livello:
 	$T(n) = \sum_{i=0}^{\log_4n-1}(\frac{3}{16})^i*cn^2+\Theta(n^{\log_43}) = \frac{(\frac{3}{16})^{\log_4n}-1}{\frac{3}{16}-1}cn^2+\Theta(n^{\log_43})$
 	Ma è troppo complessa per ottenere un’ipotesi per il nostro metodo di sostituzione, per cui usiamo un’approssimazione:
-	$T(n) = \sum_{i=0}^{\log_4n-1} (\frac{3}{16})^icn^2+\Theta(n^{\log_43}) \\ < \sum_{i=0}^\infty (\frac{3}{16})^icn^2+\Theta(n^{\log_43})\\ < \frac{1}{1-\frac{3}{16}}cn^2+\Theta(n^{\log_43}) \\ < cn^2$
+	$$T(n) = \sum_{i=0}^{\log_4n-1} (\frac{3}{16})^icn^2+\Theta(n^{\log_43}) \\ < \sum_{i=0}^\infty (\frac{3}{16})^icn^2+\Theta(n^{\log_43})\\ < \frac{1}{1-\frac{3}{16}}cn^2+\Theta(n^{\log_43}) \\ < cn^2$$
 	Quindi $T(n) = O(n^2)$
 
 Tale ipotesi va comunque **verificata**:
