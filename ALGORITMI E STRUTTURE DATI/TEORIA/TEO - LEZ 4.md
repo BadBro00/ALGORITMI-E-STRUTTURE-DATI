@@ -111,8 +111,8 @@ Esiste anche un *caso bonus*, che in realtà è l'estensione del primo caso:
 	Quindi $T(n) = O(n^2)$
 
 Tale ipotesi va comunque **verificata**:
-	$$ T(n) \le 3T(\frac{n}{4})+cn^2 \\ \le3d\frac{n^2}{4}+cn^2\\ \le \frac{3}{16}dn^2+cn^2\\ \le \frac{3}{16}dn^2+\frac{13}{16}dn^2-\frac{13}{16}dn^2+cn^2 \\ \le dn^2 $$
-	Basta scegliere $d \ | \ c \le \frac{13}{16}d$
+	$$ T(n) \le 3T(\frac{n}{4})+cn^2 \\ \le3d\frac{n^2}{4}+cn^2\\ \le \frac{3}{16}dn^2+cn^2\\ \le \frac{3}{16}dn^2+\frac{13}{16}dn^2-\frac{13}{16}dn^2+cn^2 \\ \le dn^2 - \frac{13}{16}dn^2+cn^2\\ \le dn^2 + n^2(c-\frac{13}{16}dn) \\ \le dn^2 $$ 
+	Basta scegliere $d \ | \ d\ge \frac{16}{13}c$ 
 
 **ALBERO BILANCIATO**
 	Se dividendo il sottoproblema in N parti, avremo N figli da ciascun nodo,
