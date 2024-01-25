@@ -1,6 +1,0 @@
-lezione 08 correggere quick sort
-lezione 10 correggere struttura dati code di priorità
-lezione 11 correggere esercizi - counting sort e gli altri algoritmi
-lezione 12 finire
-lezione 13 fare
-lezione 14 fare
